@@ -5,12 +5,15 @@ const path = require('path');
 const app = express();
 const imagesDir = path.join(__dirname, '..', 'client', 'alpaca-generator-parts', 'alpaca', 'backgrounds');
 
-// Define a route handler for the root path
+// Serve static files from the "client" folder
+app.use(express.static(path.join(__dirname, '..', 'client')));
+
+// Route handler for the root path
 app.get('/', (req, res) => {
-  res.send('Hello, this is your Alpaca Generator!');
+  res.sendFile(path.join(__dirname, '..', 'client', 'index.html'));
 });
 
-// Define the '/get-images' route handler to serve image filenames (as before)
+// Route handler to fetch the list of images
 app.get('/get-images', (req, res) => {
   fs.readdir(imagesDir, (err, files) => {
     if (err) {
