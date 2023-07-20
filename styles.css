@@ -1,0 +1,25 @@
+body {
+    background-color: whitesmoke;
+}
+
+h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 60px;
+    white-space: nowrap;
+    justify-content: center;
+}
+
+#main-display {
+    margin: 20%;
+}
+
+image{
+    width: 500px;
+    height: 500px;
+    display: block;
+}
+
+#flex-display {
+    display: flex;
+    flex-flow: column wrap;
+}

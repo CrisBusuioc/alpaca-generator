@@ -8,9 +8,43 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles.css">
     </head>
-    <body>
+    <body onload="randomBackground()">
 
-        
+        <main id="main-display">
+            <h1>Alpaca Generator</h1>
+            <section id="flex-display">
+
+                <img src="#">
+                <div id="accesory-div">
+                    <p class="description">Accesorise The Alpaca's</p>
+                    <button class="button-changer" >Hair</button>
+                    <button class="button-changer">Ears</button>
+                    <button class="button-changer">Eyes</button>
+                    <button class="button-changer">Mouth</button>
+                    <button class="button-changer">Neck</button>
+                    <button class="button-changer">Leg</button>                    
+                    <button class="button-changer">Accesories</button>
+                    <button class="button-changer">Background</button>
+                </div>
+
+                
+                <div id="hair-div">
+                    <p class="description">Style</p>
+                    <button class="button-changer">Default</button>
+                    <button class="button-changer">Curls</button>
+                    <button class="button-changer">Short</button>
+                    <button class="button-changer">Bang</button>                    
+                    <button class="button-changer">Elegant</button>
+                    <button class="button-changer">Quiff</button>
+                </div>
+            </section>
+
+            <section id="result-buttons">
+                <button id="random" class="bottom-result">🔀Random</button>
+                <button id="download" class="bottom-result">🖼️Download</button>
+            </section>
+        </main>
+
         <script src="script.js" async defer></script>
     </body>
 </html>
