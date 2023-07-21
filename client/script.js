@@ -1,5 +1,5 @@
 
-// Script function
+
 function randomBackground() {
   // Client-side code
 fetch('/get-images')
