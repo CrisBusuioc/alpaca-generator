@@ -1,9 +1,10 @@
-// Imports
 const express = require('express');
+const cors = require('cors');
 const fs = require('fs');
 const path = require('path');
 
 const app = express();
+app.use(cors())
 const imagesDir = path.join(__dirname, '..', 'client', 'alpaca-generator-parts', 'alpaca', 'backgrounds');
 
 // Serve static files from the "client" folder

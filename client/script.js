@@ -1,18 +1,11 @@
+import axios from 'https://cdn.jsdelivr.net/npm/axios@1.4.0/+esm';
+
 
 // Script function
 function randomBackground() {
   // Client-side code
-fetch('/get-images')
-  .then(response => response.json())
-  .then(data => {
-    // Handle the received data, which may contain the list of images
-    console.log(data.images);
-  })
-  .catch(error => {
-    // Handle any errors that occurred during the request
-    console.error('Error fetching images:', error);
-  });
-
+axios.get('http://localhost:3000/get-images')
+.then(res => console.log(res.data))
 }
 
 // Usage example:
